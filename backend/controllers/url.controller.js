@@ -4,7 +4,7 @@ const URL = require('../models/url.model')
 async function handleGenerateURLshortId(req, res) {
     const body = req.body;
     if (!body.URL) return res.status(400).json({ error: "url required" });
-    if (!body.URL.startsWith('http://')) {
+    if (!body.URL.startsWith('https://')) {
         body.URL = 'https://' + body.URL;
     }
 
