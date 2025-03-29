@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:8000";  // change if your backend runs on another port
+const baseURL = "https://Linkely-backend.onrender.com";  
 
 // Generate Short URL
 async function generateShortURL() {

@@ -6,7 +6,7 @@ const cors = require('cors') // to connect frontend
 const { connectDB } = require('./connect')
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 
 connectDB(process.env.MONGO_URL)
     .then(() => console.log("mongodb connected"))
