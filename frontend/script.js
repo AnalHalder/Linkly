@@ -1,4 +1,4 @@
-const baseURL = "https://Linkely-backend.onrender.com";  
+const baseURL = "https://linkly-su5b.onrender.com";  
 
 // Generate Short URL
 async function generateShortURL() {
