@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Linkly 🔗 URL Shortener</h1>
+
+        <!-- Shortener Section -->
+        <div class="card">
+            <h2>Generate Short URL</h2>
+            <input type="text" id="url-input" placeholder="Enter your long URL" />
+            <button onclick="generateShortURL()">Generate Short URL</button>
+
+            <div id="short-url-section" class="hidden">
+                <p>Short URL:</p>
+                <a id="short-url" target="_blank"></a>
+            </div>
+        </div>
+
+        <!-- Analytics Section -->
+        <div class="card">
+            <h2>Get Analytics</h2>
+            <input type="text" id="short-url-input" placeholder="Enter your short URL generate by Linkly" />
+            <button onclick="getAnalytics()">Get Analytics</button>
+
+            <div id="analytics-section" class="hidden">
+                <h3>Analytics</h3>
+                <p>Total Clicks: <span id="total-clicks"></span></p>
+                <ul id="history"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
