@@ -2,14 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 const {
-    handleGenerateURLshortId,
-    handleRedirectURL,
-    handleAnalyticsOfURL } = require('../controllers/url.controller')
+    generateURLshortID,
+    redirectShortURL,} = require('../controllers/url.controller')
 
-router.post("/", handleGenerateURLshortId);
-router.get("/:shortId", handleRedirectURL);
-router.get("/analytics/:shortId",handleAnalyticsOfURL)
-
+router.post("/", generateURLshortID);
+router.get("/:shortId", redirectShortURL);
 
 
 module.exports = router;
